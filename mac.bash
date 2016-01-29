@@ -4,7 +4,7 @@
 alias o="open ."
 alias a="atom"
 alias aa="a ."
-alias profile="aa ~/Work/Data/bash_it-settings"
+alias profile="aa '~/Work/Data/bash_it-settings/'"
 alias deva="ssh root@host.deva.co"
 alias sites="atom ~/.homestead/Homestead.yaml /etc/hosts"
 alias vm='function __homestead() { (cd ~/Work/Vagrant/homestead/ && vagrant $*); unset -f __homestead; }; __homestead'
