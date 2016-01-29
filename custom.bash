@@ -11,6 +11,9 @@ alias serve="php artisan serve --host=0.0.0.0"
 alias psrve="python -m SimpleHTTPServer 8000 | open 'http://localhost:8000'"
 alias todo="(leasot -r markdown **/*.php; leasot -r markdown **/**/*.php; leasot -r markdown **/**/**/*.php)"
 
+# node & npm update
+alias nu="sudo npm cache clean -f && sudo npm install -g n && sudo n stable && node --version && npm --version"
+
 # git
 alias gac="git add . && git commit -m"
 alias gs="git status"
