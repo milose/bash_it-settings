@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 # mac specific aliases
+alias o="open ."
 alias a="atom"
 alias aa="a ."
-alias profile="a ~/.bash_it/custom/milos.bash"
+alias profile="aa ~/Work/Data/bash_it-settings"
 alias deva="ssh root@host.deva.co"
 alias sites="atom ~/.homestead/Homestead.yaml /etc/hosts"
 alias vm='function __homestead() { (cd ~/Work/Vagrant/homestead/ && vagrant $*); unset -f __homestead; }; __homestead'
-alias sim="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
-alias aliases="aa ~/Work/Data/bash_it-settings"
+alias sim="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app""
