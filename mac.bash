@@ -4,7 +4,7 @@
 alias o="open ."
 alias a="atom"
 alias aa="a ."
-alias profile="aa '~/Work/Data/bash_it-settings/'"
+alias profile="aa -f '~/Work/Data/bash_it-settings/'"
 alias deva="ssh root@host.deva.co"
 alias pi="ssh pi@pi.box"
 alias sites="atom ~/.homestead/Homestead.yaml /etc/hosts"
