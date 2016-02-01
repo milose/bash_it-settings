@@ -26,6 +26,7 @@ alias gt="git fetch && git checkout --track origin/"
 alias lv="composer create-project laravel/laravel"
 alias art="php artisan"
 alias tinker="art tinker"
+alias seeder="art migrate:refresh --seed"
 alias test="./vendor/bin/phpunit"
 
 # System
