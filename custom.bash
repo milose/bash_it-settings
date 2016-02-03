@@ -12,7 +12,7 @@ alias psrve="python -m SimpleHTTPServer 8000 | open 'http://localhost:8000'"
 alias todo="(leasot -r markdown **/*.php; leasot -r markdown **/**/*.php; leasot -r markdown **/**/**/*.php)"
 
 # node & npm update
-alias nu="sudo npm cache clean -f && sudo npm install -g n && sudo n stable && node --version && npm --version"
+alias nu="npm set progress=false && sudo npm cache clean -f && sudo npm i -g n && sudo n stable && node --version && npm --version && npm set progress=true"
 
 # git
 alias gac="git add --all . && git commit -m"
