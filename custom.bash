@@ -13,8 +13,8 @@ alias todo="(leasot -r markdown **/*.php; leasot -r markdown **/**/*.php; leasot
 
 # node & npm update
 alias npms="npm set progress=false"
-alias npmi="silent && time npm install"
-alias nu="silent && sudo npm cache clean -f && sudo npm i -g n && sudo n stable && node --version && npm --version && npm set progress=true"
+alias npmi="npms && time npm install"
+alias nu="npms && sudo npm cache clean -f && sudo npm i -g n && sudo n stable && node --version && npm --version && npm set progress=true"
 
 # git
 alias gac="git add --all . && git commit -m"
