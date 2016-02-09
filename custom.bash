@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-export BASH_IT_THEME='bakke'
 unset MAILCHECK
+
+export BASH_IT_THEME='bakke'
 export SCM_CHECK=true
 
 # dev
@@ -21,6 +22,7 @@ alias nu="npms && sudo npm cache clean -f && sudo npm i -g n && sudo n stable &&
 alias gl="git log --oneline --decorate --all --graph"
 alias gs="git status"
 alias gd="git diff HEAD"
+alias gdt="git difftool HEAD -y"
 alias gi="git update-index --assume-unchanged"
 alias gu="git update-index --no-assume-unchanged"
 alias gt="git fetch && git checkout --track origin/"
