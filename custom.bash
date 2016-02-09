@@ -19,11 +19,13 @@ alias nu="npms && sudo npm cache clean -f && sudo npm i -g n && sudo n stable &&
 
 # git
 alias gac="git add --all . && git commit -m"
+alias gap="git add -p"
 alias gs="git status"
 alias gi="git update-index --assume-unchanged"
 alias gu="git update-index --no-assume-unchanged"
-alias gli='git ls-files -v | grep "^[[:lower:]]"'
+alias gli='git ls-files -v | grep "^[[:lower:]]"' #?
 alias gt="git fetch && git checkout --track origin/"
+alias gl="git log --oneline --decorate --all --graph"
 
 # laravel
 alias lv="composer create-project laravel/laravel"
