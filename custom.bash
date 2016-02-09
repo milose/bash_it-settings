@@ -20,6 +20,7 @@ alias nu="npms && sudo npm cache clean -f && sudo npm i -g n && sudo n stable &&
 # git
 alias gl="git log --oneline --decorate --all --graph"
 alias gs="git status"
+alias gd="git diff HEAD"
 alias gi="git update-index --assume-unchanged"
 alias gu="git update-index --no-assume-unchanged"
 alias gt="git fetch && git checkout --track origin/"
