@@ -21,12 +21,13 @@ alias nu="npms && sudo npm cache clean -f && sudo npm i -g n && sudo n stable &&
 # git
 alias gl="git log --oneline --decorate --all --graph"
 alias gs="git status"
+alias gc="git commit -m"
 alias gd="git diff HEAD"
 alias gdt="git difftool HEAD -y"
 alias gi="git update-index --assume-unchanged"
 alias gu="git update-index --no-assume-unchanged"
 alias gt="git fetch && git checkout --track origin/"
-alias gac="git add --all . && git commit -m"
+alias gac="git add --all . && gc"
 alias gap="git add -p"
 alias gli='git ls-files -v | grep "^[[:lower:]]"' #?
 
