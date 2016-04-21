@@ -8,6 +8,7 @@ export SCM_CHECK=true
 # dev
 alias gg="gulp && gulp watch"
 alias start="gg | serve"
+alias prod="(NODE_ENV=production && gulp --production)"
 alias serve="php artisan serve --host=0.0.0.0"
 alias psrve="python -m SimpleHTTPServer 8000 | open 'http://localhost:8000'"
 alias todo="(leasot -r markdown **/*.php; leasot -r markdown **/**/*.php; leasot -r markdown **/**/**/*.php)"
