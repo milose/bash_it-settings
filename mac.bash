@@ -13,7 +13,6 @@ alias sim="open /Applications/Xcode.app/Contents/Developer/Applications/Simulato
 
 # dirs
 alias s="cd ~/Work/_sandbox"
+#go
 alias gob="cd ~/Work/Data/bash_it-settings"
-
-# project dirs
 alias goa="cd ~/Work/_sandbox/aktivnosti"
