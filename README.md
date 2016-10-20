@@ -40,12 +40,15 @@ ln -s ~/.bash_it-settings/pi.bash ~/.bash_it/custom/pi.bash
 Reload the profile
 ```bash
 reload
-# # Debian / Ubuntu
-# source ~/.bashrc
-# # Some other distros
-# source ~/.profile
-# # Mac
-# source ~/.bash_profile
+```
+Change theme
+```bash
+# Debian / Ubuntu
+nano ~/.bashrc
+# Some other distros
+nano ~/.profile
+# Mac
+nano ~/.bash_profile
 ```
 
 Updating ailases
