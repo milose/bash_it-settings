@@ -18,10 +18,11 @@ alias s="cd ~/Work/_sandbox"
 alias gob="cd ~/Work/Data/bash_it-settings"
 alias goa="cd ~/Work/_sandbox/aktivnosti"
 
-#lambo
+#lambo function and alias
 function lmb() {
     lambo $1 "${@:2}"
     cd $1
+    #check if yarn is installed, otherwise use npm
     if hash yarn 2>/dev/null; then
         yarn
     else
