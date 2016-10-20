@@ -22,6 +22,10 @@ alias goa="cd ~/Work/_sandbox/aktivnosti"
 function lmb() {
     lambo $1 "${@:2}"
     cd $1
-    yarn
+    if hash yarn 2>/dev/null; then
+        yarn
+    else
+        npm install
+    fi
 }
 alias lmb=lmb
