@@ -16,9 +16,12 @@ cd ~/.bash_it && git pull
 ## Get custom bash settings and aliases
 Clone my repository or fork it and make your changes and customisations.
 ```bash
-git clone https://github.com/milose/bash_it-settings.git ~/.bash_it-settings
+cd ~/.bash_it/custom
+git init .
+git remote add origin https://github.com/milose/bash_it-settings.git
+git pull origin master
 ```
-
+<!--
 Link the custom.bash to the custom bash_it directory
 ```bash
 ln -s ~/.bash_it-settings/custom.bash ~/.bash_it/custom/custom.bash
@@ -32,16 +35,17 @@ ln -s ~/.bash_it-settings/mac.bash ~/.bash_it/custom/mac.bash
 Optionally, link the pi.bash (with Raspberry Pi specific aliases)
 ```bash
 ln -s ~/.bash_it-settings/pi.bash ~/.bash_it/custom/pi.bash
-```
+``` -->
 
 Reload the profile
 ```bash
-# Debian / Ubuntu
-source ~/.bashrc
-# Some other distros
-source ~/.profile
-# Mac
-source ~/.bash_profile
+reload
+# # Debian / Ubuntu
+# source ~/.bashrc
+# # Some other distros
+# source ~/.profile
+# # Mac
+# source ~/.bash_profile
 ```
 
 Updating ailases
