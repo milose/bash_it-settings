@@ -13,6 +13,15 @@ alias sim="open /Applications/Xcode.app/Contents/Developer/Applications/Simulato
 
 # dirs
 alias s="cd ~/Work/_sandbox"
+
 #go
 alias gob="cd ~/Work/Data/bash_it-settings"
 alias goa="cd ~/Work/_sandbox/aktivnosti"
+
+#lambo
+function lmb() {
+    lambo $1 "${@:2}"
+    cd $1
+    yarn
+}
+alias lmb=lmb
