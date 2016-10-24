@@ -55,3 +55,6 @@ Updating ailases
 ```bash
 bsync
 ```
+
+#TODO
+- fork bash_it and make it simpler / faster
