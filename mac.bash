@@ -29,7 +29,7 @@ function lmb() {
     lambo $1 "${@:2}"
     
     # check if no arguments passed, if so exit after lambo run
-    if [ -z "$1" ] then
+    if [ -z "$1" ]; then
         return 1
     fi
     
