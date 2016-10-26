@@ -33,4 +33,4 @@ function lmb() {
         npm install
     fi
 }
-alias lmb=lmb
+# alias lmb=lmb
