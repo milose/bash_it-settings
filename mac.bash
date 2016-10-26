@@ -20,7 +20,7 @@ alias goa="cd ~/Work/_sandbox/aktivnosti"
 
 #lambo function and alias
 function lmb() {
-    if hash lambo 2>/dev/null; then
+    if ! hash lambo 2>/dev/null; then
         echo 'run composer global require tightenco/lambo to install lambo'
         return 1
     fi
