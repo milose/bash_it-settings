@@ -20,7 +20,7 @@ alias npr="npms && time npm remove"
 alias nu="npms && sudo npm cache clean -f && sudo npm i -g n && sudo n stable && node --version && npm --version && npm set progress=true"
 
 # git
-alias gl="git log --oneline --decorate --all --graph"
+alias gl="git log --graph --pretty='%C(yellow)%h %ad%Cred%d %Creset%s%Cblue [%cn]' --abbrev-commit --date=short --all"
 alias gs="git status"
 alias gc="git commit -m"
 alias gd="git diff HEAD"
@@ -30,7 +30,8 @@ alias gu="git update-index --no-assume-unchanged"
 alias gt="git fetch && git checkout --track origin/"
 alias gac="git add --all . && gc"
 alias gap="git add -p"
-alias gli='git ls-files -v | grep "^[[:lower:]]"' #?
+alias gli='git ls-files -v | grep "^[[:lower:]]"' #print just the files that are unchanged
+alias gauth="git shortlog -s -n -e" #list authors
 
 # laravel
 alias lv="composer create-project laravel/laravel"
