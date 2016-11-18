@@ -32,6 +32,7 @@ alias gac="git add --all . && gc"
 alias gap="git add -p"
 alias gli='git ls-files -v | grep "^[[:lower:]]"' #print just the files that are unchanged
 alias gauth="git shortlog -s -n -e" #list authors
+alias nah="git reset --hard && git clean -df"
 
 # laravel
 alias lv="composer create-project laravel/laravel"
