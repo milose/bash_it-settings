@@ -45,8 +45,12 @@ alias test="./vendor/bin/phpunit"
 alias ~="cd ~/"
 alias ..="cd .."
 alias cls="clear"
-alias ls="ls -FG"
-alias ll="ls -la --color=auto"
+if [ -x /usr/bin/dircolors ]; then
+    alias ls="ls --color=auto"
+else
+    alias ls="ls -FG"
+fi
+alias ll="ls -la"
 alias lnk="ln -s"
 alias rmd="rm -rf"
 alias proc="ps aux | grep "
