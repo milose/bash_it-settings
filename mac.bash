@@ -11,10 +11,8 @@ alias hosts="atom /etc/hosts"
 alias vm='function __homestead() { (cd ~/Work/Data/Homestead/ && vagrant $*); unset -f __homestead; }; __homestead'
 alias sim="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
 
-# dirs
-alias s="cd ~/Work/_sandbox"
-
 #go
+alias s="cd ~/Work/_sandbox"
 alias gob="cd ~/Work/Data/bash_it-settings"
 alias goa="cd ~/Work/_sandbox/aktivnosti"
 
