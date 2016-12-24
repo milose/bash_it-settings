@@ -3,8 +3,8 @@
 # mac specific aliases
 alias o="open ."
 alias a="atom"
-alias aa="a ."
-alias profile="a ~/Work/Data/bash_it-settings/"
+alias aa="atom ."
+alias profile="atom ~/Work/Data/bash_it-settings/"
 alias deva="ssh -i ~/.ssh/do root@host.deva.co"
 alias pi="ssh pi@pi.box"
 alias sites="atom /etc/hosts"
