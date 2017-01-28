@@ -37,8 +37,8 @@ alias nah="git reset --hard && git clean -df"
 # laravel
 alias lv="composer create-project laravel/laravel"
 alias art="php artisan"
-alias tinker="art tinker"
-alias seeder="art migrate:refresh --seed"
+alias tinker="php artisan tinker"
+alias reseed="php artisan migrate:refresh --seed"
 alias test="./vendor/bin/phpunit"
 
 # System
