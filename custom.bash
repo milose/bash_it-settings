@@ -40,6 +40,7 @@ alias tinker="php artisan tinker"
 alias reseed="php artisan migrate:refresh --seed"
 alias tst="phpunit"
 alias vtst="./vendor/bin/phpunit"
+alias opt="composer dumpautoload && php artisan optimize && php artisan route:cache"
 
 # System
 alias ~="cd ~/"
