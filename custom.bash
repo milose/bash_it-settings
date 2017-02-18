@@ -39,7 +39,8 @@ alias lv="composer create-project laravel/laravel"
 alias art="php artisan"
 alias tinker="php artisan tinker"
 alias reseed="php artisan migrate:refresh --seed"
-alias tst="./vendor/bin/phpunit"
+alias test="phpunit"
+alias vtest="./vendor/bin/phpunit"
 
 # System
 alias ~="cd ~/"
