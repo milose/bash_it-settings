@@ -35,12 +35,11 @@ alias gauth="git shortlog -s -n -e" #list authors
 alias nah="git reset --hard && git clean -df"
 
 # laravel
-alias lv="composer create-project laravel/laravel"
 alias art="php artisan"
 alias tinker="php artisan tinker"
 alias reseed="php artisan migrate:refresh --seed"
-alias test="phpunit"
-alias vtest="./vendor/bin/phpunit"
+alias tst="phpunit"
+alias vtst="./vendor/bin/phpunit"
 
 # System
 alias ~="cd ~/"
