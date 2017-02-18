@@ -10,6 +10,7 @@ alias pi="ssh pi@pi.box"
 alias hosts="atom /etc/hosts"
 alias vm='function __homestead() { (cd ~/Work/Data/Homestead/ && vagrant $*); unset -f __homestead; }; __homestead'
 alias sim="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
+alias wd="curl -s wttr.in | sed -n '1,7p'"
 
 #go
 alias s="cd ~/Work/_sandbox"
