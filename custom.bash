@@ -28,6 +28,7 @@ alias gdt="git difftool HEAD -y"
 alias gi="git update-index --assume-unchanged"
 alias gu="git update-index --no-assume-unchanged"
 alias gt="git fetch && git checkout --track origin/"
+alias gaa="git add --all ."
 alias gac="git add --all . && gc"
 alias gap="git add -p"
 alias gli='git ls-files -v | grep "^[[:lower:]]"' #print just the files that are unchanged
