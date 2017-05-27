@@ -39,8 +39,7 @@ alias nah="git reset --hard && git clean -df"
 alias art="php artisan"
 alias tinker="php artisan tinker"
 alias reseed="php artisan migrate:refresh --seed"
-alias tst="phpunit"
-alias vtst="./vendor/bin/phpunit"
+alias tst="./vendor/bin/phpunit"
 alias opt="composer dumpautoload && php artisan optimize && php artisan route:cache"
 alias pub="git reset -- public/*" # remove public folder from commits
 
