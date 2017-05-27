@@ -2,8 +2,8 @@
 
 # mac specific aliases
 alias o="open ."
-alias a="atom"
-alias aa="atom ."
+alias a="atom --enable-gpu-rasterization"
+alias aa="atom . --enable-gpu-rasterization"
 alias profile="atom ~/Work/Data/bash_it-settings/"
 alias deva="ssh -i ~/.ssh/do root@host.deva.co"
 alias pi="ssh pi@pi.box"
