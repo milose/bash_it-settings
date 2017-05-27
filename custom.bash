@@ -42,6 +42,7 @@ alias reseed="php artisan migrate:refresh --seed"
 alias tst="./vendor/bin/phpunit"
 alias opt="composer dumpautoload && php artisan optimize && php artisan route:cache"
 alias pub="git reset -- public/*" # remove public folder from commits
+alias plz="php please" #statamic
 
 # System
 alias ~="cd ~/"
