@@ -17,30 +17,3 @@ alias dnsflush="sudo killall -HUP mDNSResponder"
 # shortcuts to folders
 alias s="cd ~/Work/_sandbox"
 alias gob="cd ~/Work/Data/bash_it-settings"
-alias goa="cd ~/Work/_sandbox/aktivnosti"
-
-# lambo function
-function lmb() {
-    # check if lambo is executable
-    if ! hash lambo 2>/dev/null; then
-        echo 'run composer global require tightenco/lambo to install lambo'
-        return 1
-    fi
-    
-    lambo $1 "${@:2}"
-    
-    # check if no arguments passed, if so exit after lambo run
-    if [ -z "$1" ]; then
-        return 1
-    fi
-    
-    # change directory
-    cd $1
-    
-    # check if yarn is executable, otherwise use npm
-    if hash yarn 2>/dev/null; then
-        yarn
-    else
-        npm install
-    fi
-}
