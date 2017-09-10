@@ -30,11 +30,12 @@ alias gi="git update-index --assume-unchanged"
 alias gu="git update-index --no-assume-unchanged"
 alias gt="git fetch && git checkout --track origin/"
 alias gaa="git add --all ."
-alias gac="git add --all . && gc"
+alias gac="git add --all . && git commit -m"
 alias gap="git add -p"
 alias gli='git ls-files -v | grep "^[[:lower:]]"' #print just the files that are unchanged
 alias gauth="git shortlog -s -n -e" #list authors
 alias nah="git reset --hard && git clean -df"
+alias use="git checkout"
 
 # laravel
 alias art="php artisan"
