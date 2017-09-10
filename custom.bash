@@ -4,6 +4,7 @@ unset MAILCHECK
 
 export BASH_IT_THEME='bakke'
 export SCM_CHECK=true
+alias sudo="sudo "
 
 # dev
 alias gg="gulp && gulp watch"
@@ -58,3 +59,10 @@ alias lnk="ln -s"
 alias rmd="rm -rf"
 alias proc="ps aux | grep "
 alias bsync="(cd ~/.bash_it/custom/ && git pull origin master) && reload"
+
+# Prints disk / folder usage in human readable form
+alias size="du -sh"
+alias usage="du -h -d1"
+alias drives="df -h"
+alias ping="ping -c 5"
+alias c="clear"
