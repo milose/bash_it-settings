@@ -40,6 +40,7 @@ alias bust="php artiasn route:clear && php artisan config:clear && php artisan v
 # System
 alias ~="cd ~/"
 alias ..="cd .."
+alias c="clear"
 alias cls="clear"
 if [ -x /usr/bin/dircolors ]; then
     alias ls="ls --color=auto"
@@ -49,6 +50,7 @@ fi
 alias ll="ls -la"
 alias lnk="ln -s"
 alias rmd="rm -rf"
+alias ping="ping -c 5"
 alias proc="ps aux | grep "
 alias bsync="(cd ~/.bash_it/custom/ && git pull origin master) && reload"
 
@@ -56,5 +58,3 @@ alias bsync="(cd ~/.bash_it/custom/ && git pull origin master) && reload"
 alias size="du -sh"
 alias usage="du -h -d1"
 alias drives="df -h"
-alias ping="ping -c 5"
-alias c="clear"
