@@ -40,6 +40,7 @@ alias bust="php artiasn route:clear && php artisan config:clear && php artisan v
 # System
 alias ~="cd ~/"
 alias ..="cd .."
+alias ...="cd .. && cd .."
 alias c="clear"
 alias cls="clear"
 if [ -x /usr/bin/dircolors ]; then
