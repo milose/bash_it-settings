@@ -4,9 +4,6 @@
 alias o="open ."
 alias a="atom"
 alias aa="atom ."
-alias profile="atom ~/Work/Data/bash_it-settings/"
-alias deva="ssh -i ~/.ssh/do root@host.deva.co"
-alias pi="ssh pi@pi.box"
 alias hosts="atom /etc/hosts"
 alias vm='function __homestead() { (cd ~/Work/Data/Homestead/ && vagrant $*); unset -f __homestead; }; __homestead'
 alias sim="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
