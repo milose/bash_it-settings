@@ -14,12 +14,6 @@ alias serve="php artisan serve --host=0.0.0.0"
 alias psrve="python -m SimpleHTTPServer 8000 | open 'http://localhost:8000'"
 alias todo="(leasot -r markdown **/*.php; leasot -r markdown **/**/*.php; leasot -r markdown **/**/**/*.php)"
 
-# node & npm update
-alias npms="npm set progress=false"
-alias npi="npms && time npm install"
-alias npr="npms && time npm remove"
-alias nu="npms && sudo npm cache clean -f && sudo npm i -g n && sudo n stable && node --version && npm --version && npm set progress=true"
-
 # git
 alias gl="git log --graph --pretty='%C(yellow)%h %ad%Cred%d %Creset%s%Cblue [%cn]' --abbrev-commit --date=short --all"
 alias gs="git status"
