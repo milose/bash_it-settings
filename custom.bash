@@ -37,6 +37,9 @@ alias pub="git reset -- public/*" # remove public folder from commits
 alias plz="php please" #statamic
 alias bust="php artiasn route:clear && php artisan config:clear && php artisan view:clear" #bust the cache
 
+# other web related stuff
+alias nuxt="yarn create nuxt-app"
+
 # System
 alias ~="cd ~/"
 alias ..="cd .."
