@@ -60,5 +60,6 @@ alias bsync="(cd ~/.bash_it/custom/ && git pull origin master) && reload"
 
 # Prints disk / folder usage in human readable form
 alias size="du -sh"
+alias sizes="du -sh */"
 alias usage="du -h -d1"
 alias drives="df -h"
