@@ -58,6 +58,9 @@ alias ping="ping -c 5"
 alias proc="ps aux | grep "
 alias bsync="(cd ~/.bash_it/custom/ && git pull origin master) && reload"
 
+# network
+alias ports="sudo netstat -tulpn | grep LISTEN --color=never"
+
 # Prints disk / folder usage in human readable form
 alias size="du -sh"
 alias sizes="du -sh */"
