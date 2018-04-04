@@ -15,3 +15,7 @@ alias dnsflush="sudo killall -HUP mDNSResponder"
 # shortcuts to folders
 alias s="cd ~/Work/_sandbox"
 alias gob="cd ~/Work/Data/bash_it-settings"
+
+# system utils
+alias soff="sudo mdutil -i off /"
+alias son="sudo mdutil -i on /"
