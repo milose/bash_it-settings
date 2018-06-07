@@ -57,6 +57,7 @@ alias rmd="rm -rf"
 alias ping="ping -c 5"
 alias proc="ps aux | grep "
 alias bsync="(cd ~/.bash_it/custom/ && git pull origin master) && reload"
+alias htop="htop -s PERCENT_CPU"
 
 # network
 alias ports="sudo netstat -tulpn | grep LISTEN --color=never"
