@@ -22,3 +22,4 @@ alias son="sudo mdutil -i on /"
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 alias a="atom"
 alias aa="atom ."
+alias cc="code ."
