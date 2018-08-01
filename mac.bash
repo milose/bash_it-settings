@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # mac specific aliases
-if [ "$(uname)" == "Darwin" ]
+if [ "$(uname)" == "Darwin" ];then
     alias o="open ."
     alias hosts="atom /etc/hosts"
     alias vm='function __homestead() { (cd ~/Work/Data/Homestead/ && vagrant $*); unset -f __homestead; }; __homestead'
