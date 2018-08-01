@@ -23,5 +23,5 @@ if [ "$(uname)" == "Darwin" ];then
     alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
     alias a="atom"
     alias aa="atom ."
-    alias cc="code ."
+    alias c="code ."
 fi

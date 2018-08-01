@@ -44,7 +44,6 @@ alias nuxt="yarn create nuxt-app"
 alias ~="cd ~/"
 alias ..="cd .."
 alias ...="cd .. && cd .."
-alias c="clear"
 alias cls="clear"
 if [ -x /usr/bin/dircolors ]; then
     alias ls="ls --color=auto"
