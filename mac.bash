@@ -21,7 +21,6 @@ if [ "$(uname)" == "Darwin" ];then
 
     # Application shortcuts
     alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
-    alias a="atom"
-    alias aa="atom ."
+    alias a="atom ."
     alias c="code ."
 fi
