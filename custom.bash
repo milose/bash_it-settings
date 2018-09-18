@@ -13,6 +13,7 @@ alias prod="(NODE_ENV=production && gulp --production)"
 alias serve="php artisan serve --host=0.0.0.0"
 alias psrve="python -m SimpleHTTPServer 8000 | open 'http://localhost:8000'"
 alias todo="(leasot -r markdown **/*.php; leasot -r markdown **/**/*.php; leasot -r markdown **/**/**/*.php)"
+alias empty="truncate -s 0"
 
 # git
 alias gl="git log --graph --pretty='%C(yellow)%h %ad%Cred%d %Creset%s%Cblue [%cn]' --abbrev-commit --date=short --all"
