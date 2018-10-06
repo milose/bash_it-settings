@@ -60,9 +60,9 @@ alias bsync="(cd ~/.bash_it/custom/ && git pull origin master) && reload"
 alias htop="htop -s PERCENT_CPU"
 
 if [ "$(uname)" == "Darwin" ];then
-    alias ccache="composer clearcache && npm cache clear --force && yarn cache clean && brew cleanup -s"
+    alias cclean="composer clearcache && npm cache clear --force && yarn cache clean && brew cleanup -s"
 else
-    alias ccache="composer clearcache && npm cache clear --force && yarn cache clean"
+    alias cclean="composer clearcache && npm cache clear --force && yarn cache clean"
 fi
 
 # network
