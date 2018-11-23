@@ -79,3 +79,12 @@ alias mounts="mount | grep /sd --color=never"
 # Transfer function for transfer.sh
 transfer() { if [ $# -eq 0 ]; then echo -e "No arguments specified. Usage:\necho transfer /tmp/test.md\ncat /tmp/test.md | transfer test.md"; return 1; fi 
 tmpfile=$( mktemp -t transferXXX ); if tty -s; then basefile=$(basename "$1" | sed -e 's/[^a-zA-Z0-9._-]/-/g'); curl --progress-bar --upload-file "$1" "https://transfer.sh/$basefile" >> $tmpfile; else curl --progress-bar --upload-file "-" "https://transfer.sh/$1" >> $tmpfile ; fi; cat $tmpfile; rm -f $tmpfile; }
+
+# Drive speed benchmark
+speed() {
+    echo "WRITE SPEED:"
+    sync; dd if=/dev/zero of=tempfile bs=1M count=1024; sync
+
+    echo "READ SPEED:"
+    dd if=tempfile of=/dev/null bs=1M count=1024
+}
