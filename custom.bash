@@ -83,8 +83,16 @@ tmpfile=$( mktemp -t transferXXX ); if tty -s; then basefile=$(basename "$1" | s
 # Drive speed benchmark
 speed() {
     echo "WRITE SPEED:"
-    sync; dd if=/dev/zero of=tempfile bs=1M count=1024; sync
+    if [ "$(uname)" == "Darwin" ];then
+        sync; dd if=/dev/zero of=tempfile bs=1m count=1024; sync
+    else
+        sync; dd if=/dev/zero of=tempfile bs=1M count=1024; sync
+    fi
 
     echo "READ SPEED:"
-    dd if=tempfile of=/dev/null bs=1M count=1024
+    if [ "$(uname)" == "Darwin" ];then
+        dd if=tempfile of=/dev/null bs=1m count=1024
+    else
+        dd if=tempfile of=/dev/null bs=1M count=1024
+    fi
 }
