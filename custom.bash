@@ -51,7 +51,7 @@ if [ -x /usr/bin/dircolors ]; then
 else
     alias ls="ls -FG"
 fi
-alias ll="ls -la"
+alias ll="ls -lah"
 alias lnk="ln -s"
 alias rmd="rm -rf"
 alias ping="ping -c 5"
