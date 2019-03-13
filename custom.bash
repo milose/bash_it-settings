@@ -68,12 +68,14 @@ fi
 # network
 alias ports="sudo netstat -tulpn | grep LISTEN --color=never"
 
-# Prints disk / folder usage in human readable form
+# disk and files
 alias size="du -sh"
 alias sizes="du -sh */"
 alias usage="du -h -d1"
 alias drives="df -h"
 alias mounts="mount | grep /sd --color=never"
+alias trunc="truncate -s 0"
+
 
 # Functions
 # Transfer function for transfer.sh
