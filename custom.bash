@@ -24,9 +24,11 @@ alias gdt="git difftool HEAD -y"
 alias gaa="git add --all ."
 alias gac="git add --all . && git commit -m"
 alias gap="git add -p"
-alias gauth="git shortlog -s -n -e" #list authors
+alias gauth="git shortlog -s -n -e" # list authors
 alias nah="git reset --hard && git clean -df"
 alias use="git checkout"
+alias pull="git pull"
+alias pul="FASTER_MERGE=no git pull" # clever name hehe -- use $FASTER_MERGE env var in post-merge hook script to skip some steps
 
 # laravel
 alias art="php artisan"
