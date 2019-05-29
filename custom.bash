@@ -53,6 +53,7 @@ if [ -x /usr/bin/dircolors ]; then
 else
     alias ls="ls -FG"
 fi
+alias distro="lsb_release -a"
 alias ll="ls -lah"
 alias lnk="ln -s"
 alias rmd="rm -rf"
@@ -104,7 +105,6 @@ speed() {
 }
 
 # Display color chart
-
 colors() {
     for i in {0..255} ; do
         printf "\x1b[48;5;%sm%3d\e[0m " "$i" "$i"
