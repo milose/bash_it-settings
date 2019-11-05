@@ -29,7 +29,7 @@ alias nah="git reset --hard && git clean -df"
 alias use="git checkout"
 alias pull="git pull"
 alias pul="FASTER_MERGE=yes git pull" # clever name hehe -- use $FASTER_MERGE env var in post-merge hook script to skip some steps
-alias gp="git diff > .unstaged.patch" # generate a patch file from unstaged changes
+alias gp="git add --all . && git diff HEAD > .unstaged.patch && git reset HEAD" # generate a patch file from unstaged changes
 alias gpa="git apply .unstaged.patch && rm .unstaged.patch" # apply the changes using the .unified.patch
 
 # laravel
