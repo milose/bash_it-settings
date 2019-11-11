@@ -28,6 +28,7 @@ alias gauth="git shortlog -s -n -e" # list authors
 alias nah="git reset --hard && git clean -df"
 alias use="git checkout"
 alias pull="git pull"
+alias push="git remote | xargs -L1 git push --all" # push all remotes
 alias pul="FASTER_MERGE=yes git pull" # clever name hehe -- use $FASTER_MERGE env var in post-merge hook script to skip some steps
 alias gp="git add --all . && git diff HEAD > .unstaged.patch && git reset HEAD" # generate a patch file from unstaged changes
 alias gpu="transfer .unstaged.patch" # generate a patch file from unstaged changes
