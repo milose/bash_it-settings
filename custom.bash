@@ -33,6 +33,7 @@ alias pul="FASTER_MERGE=yes git pull" # clever name hehe -- use $FASTER_MERGE en
 alias gp="git add --all . && git diff HEAD > .unstaged.patch && git reset HEAD" # generate a patch file from unstaged changes
 alias gpu="transfer .unstaged.patch" # generate a patch file from unstaged changes
 alias gpa="git apply .unstaged.patch && rm .unstaged.patch" # apply the changes using the .unified.patch
+alias gclear="git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d" # deletes merged branches
 
 # laravel
 alias art="php artisan"
