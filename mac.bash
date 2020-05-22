@@ -10,6 +10,7 @@ if [ "$(uname)" == "Darwin" ];then
     alias moon="curl -s wttr.in/Moon?lang=en | sed -n '1,23p'"
     alias sleep="pmset sleep now"
     alias dnsflush="sudo killall -HUP mDNSResponder"
+    alias composer="COMPOSER_MEMORY_LIMIT=-1 /usr/local/bin/composer"
 
     # shortcuts to folders
     alias s="cd ~/Work/_sandbox"
