@@ -24,4 +24,9 @@ if [ "$(uname)" == "Darwin" ];then
     alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
     alias a="atom ."
     alias c="code ."
+
+    # Node versions
+    alias node12='export PATH="/usr/local/opt/node@12/bin:$PATH" && export LDFLAGS="-L/usr/local/opt/node@12/lib" && export CPPFLAGS="-I/usr/local/opt/node@12/include"'
+    alias node14='export PATH="/usr/local/opt/node@14/bin:$PATH" && export LDFLAGS="-L/usr/local/opt/node@14/lib" && export CPPFLAGS="-I/usr/local/opt/node@14/include"'
+    alias node15='export PATH="/usr/local/opt/node@15/bin:$PATH" && export LDFLAGS="-L/usr/local/opt/node@15/lib" && export CPPFLAGS="-I/usr/local/opt/node@15/include"'
 fi
