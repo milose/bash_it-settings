@@ -1,52 +1,34 @@
 #!/usr/bin/env bash
-
 unset MAILCHECK
 
 export BASH_IT_THEME='bakke'
 export SCM_CHECK=true
-alias sudo="sudo "
 
 # dev
-alias gg="gulp && gulp watch"
-alias start="gg | serve"
-alias prod="(NODE_ENV=production && gulp --production)"
 alias serve="php artisan serve --host=0.0.0.0"
 alias psrve="python -m SimpleHTTPServer 8000 | open 'http://localhost:8000'"
-alias todo="(leasot -r markdown **/*.php; leasot -r markdown **/**/*.php; leasot -r markdown **/**/**/*.php)"
-alias empty="truncate -s 0"
 
 # git
 alias gl="git log --graph --pretty='%C(yellow)%h %ad%Cred%d %Creset%s%Cblue [%cn]' --abbrev-commit --date=short --all"
 alias gs="git status"
-alias gc="git commit -m"
 alias gd="git diff HEAD"
-alias gdt="git difftool HEAD -y"
-alias gaa="git add --all ."
+alias gc="git commit -m"
+alias ga="git add --all ."
 alias gac="git add --all . && git commit -m"
 alias gap="git add -p"
-alias gauth="git shortlog -s -n -e" # list authors
 alias nah="git reset --hard && git clean -df"
 alias use="git checkout"
 alias pull="git pull --all" # pull from all remotes
 alias push="git remote | xargs -L1 git push --all" # push all remotes
 alias pul="FASTER_MERGE=yes git pull" # clever name hehe -- use $FASTER_MERGE env var in post-merge hook script to skip some steps
-alias gp="git add --all . && git diff HEAD > .unstaged.patch && git reset HEAD" # generate a patch file from unstaged changes
-alias gpu="transfer .unstaged.patch" # generate a patch file from unstaged changes
-alias gpa="git apply .unstaged.patch && rm .unstaged.patch" # apply the changes using the .unified.patch
-alias gclear="git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d" # deletes merged branches
 
 # laravel
 alias art="php artisan"
 alias tinker="php artisan tinker"
 alias reseed="php artisan migrate:refresh --seed"
 alias tst="./vendor/bin/phpunit"
-alias opt="composer dumpautoload && php artisan optimize && php artisan route:cache"
-alias pub="git reset -- public/*" # remove public folder from commits
-alias plz="php please" #statamic
-alias bust="php artiasn route:clear && php artisan config:clear && php artisan view:clear" #bust the cache
-
-# other web related stuff
-alias nuxt="yarn create nuxt-app"
+alias opt="php artiasn optimize"
+alias bust="php artiasn optimize:clear"
 
 # System
 alias ~="cd ~/"
@@ -60,7 +42,6 @@ else
 fi
 alias distro="lsb_release -a"
 alias ll="ls -lah"
-alias lnk="ln -s"
 alias rmd="rm -rf"
 alias ping="ping -c 5"
 alias proc="ps aux | grep "
@@ -82,8 +63,8 @@ alias sizes="du -sh */"
 alias usage="du -h -d1"
 alias drives="df -h"
 alias mounts="mount | grep /sd --color=never"
+alias empty="truncate -s 0"
 alias trunc="truncate -s 0"
-
 
 # Functions
 
