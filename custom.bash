@@ -52,10 +52,11 @@ if [ "$(uname)" == "Darwin" ];then
     alias cclean="composer clearcache && npm cache clear --force && yarn cache clean && brew cleanup -s"
 else
     alias cclean="composer clearcache && npm cache clear --force && yarn cache clean"
+    
+    # network
+    alias sessions="sudo netstat -tnpa | grep 'ESTABLISHED.*sshd'"
+    alias ports="sudo netstat -tulpn | grep LISTEN --color=never"
 fi
-
-# network
-alias ports="sudo netstat -tulpn | grep LISTEN --color=never"
 
 # disk and files
 alias size="du -sh"
